@@ -1,5 +1,6 @@
 
 public class Main {
 	System.out.println("Hola");
-	System.out.println("PITO");
+	System.out.println("Prueba de funcionamiento :)");
+	
 }
