@@ -1,6 +1,8 @@
 import java.util.*;
 public class Main {
-	System.out.println("Hola");
-	System.out.println("Prueba de funcionamiento :)");
-	System.out.println("Prueba de Andre :)");
+	public Main() {
+	System.out.println("S");
+	System.out.println("Prueba de funcionamiento");
+	System.out.println("Prueba de Andre");
+	}
 }
