@@ -1,4 +1,4 @@
-package gestionMenus;
+package datos;
 
 public class Plato {
 private String tipo;

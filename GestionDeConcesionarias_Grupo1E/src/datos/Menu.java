@@ -1,4 +1,4 @@
-package gestionMenus;
+package datos;
 import java.util.*;
 //clase que define el menu 
 public class Menu {

@@ -1,6 +1,5 @@
-package pagosCualificaciones;
+package datos;
 import java.util.*;
-import gestionMenus.*;
 
 public class BaseEstadisticas {
 private HashMap<Plato,Integer> valoracionesPlatos;

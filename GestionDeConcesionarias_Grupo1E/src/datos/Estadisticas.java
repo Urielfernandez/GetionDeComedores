@@ -1,5 +1,4 @@
-package estadisticas;
-import gestionMenus.*;
+package datos;
 
 public class Estadisticas {
 public static final int plazasDisponibles=200;

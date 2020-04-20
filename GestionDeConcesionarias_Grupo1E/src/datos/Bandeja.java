@@ -1,5 +1,4 @@
-package pagosCualificaciones;
-import gestionMenus.*;
+package datos;
 import java.util.*;
 import java.text.SimpleDateFormat;
 

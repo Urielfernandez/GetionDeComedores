@@ -1,4 +1,4 @@
-package gestionMenus;
+package datos;
 
 public class Bebida {
 private String nombre;
