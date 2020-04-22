@@ -8,6 +8,5 @@ public interface IGestionDatos {
 	public void almacenarCompra(Bandeja bandeja);
 	public void almacenarMenu(Menu menu);
 	public void almacenarValoracion(Bandeja bandeja);
-	public void prueba(JSONObject obj);
-	public void prueba3(JSONObject obj);
+	
 }
