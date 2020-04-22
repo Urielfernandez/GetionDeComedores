@@ -11,7 +11,7 @@ private Plato postreSeleccionado;
 private Bebida bebidaSeleccionada;
 private BaseEstadisticas estadisticas;
 public Bandeja(String id, String idVale, Plato primeroSeleccionado, Plato segundoSeleccionado, Plato postreSeleccionado,
-		Bebida bebidaSeleccionada, BaseEstadisticas estadisticas) {
+		Bebida bebidaSeleccionada) {
 	this.id = id;
 	this.idVale = idVale;
 	this.primeroSeleccionado = primeroSeleccionado;
@@ -22,7 +22,7 @@ public Bandeja(String id, String idVale, Plato primeroSeleccionado, Plato segund
 	Calendar calendar = GregorianCalendar.getInstance(); // creates a new calendar instance
 	calendar.setTime(date);   // assigns calendar to given date 
 	//cuando se crea la bandeja se le asigna la hora de asignacion y el dia actual
-	this.estadisticas=new BaseEstadisticas(new Date().toString().substring(11, 20),new SimpleDateFormat("dd-MM-yyyy").format(new Date()));
+	this.estadisticas=new BaseEstadisticas(new Date().toString().substring(11, 20),new SimpleDateFormat("dd/MM/yyyy").format(new Date()));
 	
 }
 public String getId() {

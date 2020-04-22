@@ -7,6 +7,10 @@ private ArrayList <Plato> segundossDisponibles;
 private ArrayList <Plato> postresDisponibles;
 private ArrayList <Bebida> bebidas;
 private String diaSemana;
+public Menu() {
+	super();
+	
+}
 public Menu(ArrayList<Plato> primerosDisponibles, ArrayList<Plato> segundossDisponibles,
 		ArrayList<Plato> postresDisponibles, ArrayList<Bebida> bebidas, String diaSemana) {
 	super();
