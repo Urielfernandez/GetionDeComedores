@@ -4,7 +4,7 @@ import java.util.*;
 public interface ISensores {
  
 	public String generarCodigoVale();
-	public String canjearVale();
+	public boolean canjearVale(String valeACanjear) ;
 	public String generarCodigoBandeja();
 	public String generarCodigoBandejaDevuelta(Bandeja bandeja);
 }

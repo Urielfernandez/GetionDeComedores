@@ -42,9 +42,16 @@ public class SensoresImpl implements ISensores{
 	}
 
 	@Override
-	public String canjearVale() {
+	public boolean canjearVale(String valeACanjear) {
+		if(this.valesGenerados.contains(valeACanjear)) {
+			this.valesGenerados.remove(valeACanjear);
+			return true;
+		}
 		
-		return null;
+		System.out.println("Lo sentimos, no es un vale válido.");
+		
+		return false;
+		
 	}
 
 	@Override
@@ -70,10 +77,16 @@ public class SensoresImpl implements ISensores{
 
 	@Override
 	public String generarCodigoBandejaDevuelta(Bandeja bandeja) {
+		String idAux = null;
 		Calendar fecha = Calendar.getInstance();
-		bandeja.getEstadisticas().setHoraDevolucion(Integer.toString(fecha.HOUR_OF_DAY));
+		bandeja.getEstadisticas().setHoraDevolucion(Integer.toString(fecha.HOUR_OF_DAY) + Integer.toString(fecha.MINUTE));
 		
-		return null;
+		if(this.bandejasEntregadas.contains(bandeja.getId())) {
+			idAux = bandeja.getId();
+			this.bandejasEntregadas.remove(bandeja.getEstadisticas());
+		}
+		
+		return idAux;
 	}
 
 }

@@ -27,13 +27,24 @@ public class PagosCualificacionesImpl implements IPagosCualificaciones{
 		/*Como en el primer incremento no tratamos el pago de menús,
 		 *  lo único que realizamos es la asignacion de una bandeja a nuestro usuario
 		 */
+		//Generamos un vale para simular el pago
+		this.conexionSensor.generarCodigoVale();
 		
-		Bandeja bandejaDelUsuario = new Bandeja(this.conexionSensor.generarCodigoBandeja(), this.conexionSensor.generarCodigoVale(), bandeja.getPrimeroSeleccionado(), bandeja.getSegundoSeleccionado(), bandeja.getPostreSeleccionado(), bandeja.getBebidaSeleccionada());
+		//Le solicitamos al usuario que lo introduzca
+		System.out.println("Por favor, introduce un vale para realizar el pago.");
+		Scanner escaner = new Scanner("System.in");
+		String valeAux = escaner.nextLine();
 		
-		//Introducimos la bandeja en el historial para poder tener cuenta de las que estamos entregando a los usuarios, y realizar las comprobaciones necesarias cuando estas son devueltas
-		this.historialDeBandejas.put(bandejaDelUsuario.getId(), bandejaDelUsuario);
+		if(this.conexionSensor.canjearVale(valeAux)) {
+			Bandeja bandejaDelUsuario = new Bandeja(this.conexionSensor.generarCodigoBandeja(), this.conexionSensor.generarCodigoVale(), bandeja.getPrimeroSeleccionado(), bandeja.getSegundoSeleccionado(), bandeja.getPostreSeleccionado(), bandeja.getBebidaSeleccionada());
+			
+			//Introducimos la bandeja en el historial para poder tener cuenta de las que estamos entregando a los usuarios, y realizar las comprobaciones necesarias cuando estas son devueltas
+			this.historialDeBandejas.put(bandejaDelUsuario.getId(), bandejaDelUsuario);
+			
+			return bandejaDelUsuario;
+		}
 		
-		return bandejaDelUsuario;
+		return null;
 	}
 
 	@Override
@@ -86,7 +97,7 @@ public class PagosCualificacionesImpl implements IPagosCualificaciones{
 	@Override
 	public String devolverBandeja(Bandeja bandeja) {
 		if(this.historialDeBandejas.containsKey(bandeja.getId())) {
-			return this.conexionSensor.generarCodigoBandejaDevuelta();
+			return this.conexionSensor.generarCodigoBandejaDevuelta(bandeja);
 		}
 		
 		return null;
