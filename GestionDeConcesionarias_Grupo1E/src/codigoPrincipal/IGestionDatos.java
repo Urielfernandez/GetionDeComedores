@@ -6,6 +6,5 @@ public interface IGestionDatos {
 	public ArrayList<Menu> leerMenus();
 	public void almacenarCompra(Bandeja bandeja);
 	public void almacenarMenu(Menu menu);
-	public void almacenarValoraci�n(Bandeja bandeja);
-	//pito
+	public void almacenarValoracion(Bandeja bandeja);
 }
