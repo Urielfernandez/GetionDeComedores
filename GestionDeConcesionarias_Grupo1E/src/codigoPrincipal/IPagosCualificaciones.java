@@ -5,8 +5,8 @@ import java.util.*;
 public interface IPagosCualificaciones {
 	
 	//esta funcion q hace
-	public void pagarMenu(Menu menu);
-	public void realizarValoracion(Bandeja bandeja);	
+	public Bandeja pagarMenu(Bandeja bandeja);
+	public void guardarValoracion(Bandeja bandeja);	
 	public String devolverBandeja(Bandeja bandeja);
 	
 
