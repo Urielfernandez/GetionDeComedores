@@ -1,8 +1,10 @@
 package Sensores;
 
 import java.util.ArrayList;
+import java.util.Calendar;
 
 import codigoPrincipal.ISensores;
+import datos.Bandeja;
 
 public class SensoresImpl implements ISensores{
 	private ArrayList<String> valesGenerados; //Para llevar el control de los vales que han sido generados por el sistema
@@ -34,6 +36,7 @@ public class SensoresImpl implements ISensores{
 		
 		this.generadorDeVales++;
 		this.valesGenerados.add(valeGenerado);
+		System.out.println("Tu vale es: " + valeGenerado);
 		
 		return valeGenerado;
 	}
@@ -66,8 +69,10 @@ public class SensoresImpl implements ISensores{
 	}
 
 	@Override
-	public String generarCodigoBandejaDevuelta() {
-		// TODO Auto-generated method stub
+	public String generarCodigoBandejaDevuelta(Bandeja bandeja) {
+		Calendar fecha = Calendar.getInstance();
+		bandeja.getEstadisticas().setHoraDevolucion(Integer.toString(fecha.HOUR_OF_DAY));
+		
 		return null;
 	}
 

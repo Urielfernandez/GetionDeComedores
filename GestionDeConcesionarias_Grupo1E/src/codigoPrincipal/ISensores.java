@@ -6,5 +6,5 @@ public interface ISensores {
 	public String generarCodigoVale();
 	public String canjearVale();
 	public String generarCodigoBandeja();
-	public String generarCodigoBandejaDevuelta();
+	public String generarCodigoBandejaDevuelta(Bandeja bandeja);
 }
