@@ -8,7 +8,7 @@ public interface IEstadisticas {
  public Plato seleccionarPlatoMenosSolicitado(String tipo);
  public Plato seleccionarPlatoMejorValorado(String tipo);
  public Plato seleccionarPlatoPeorValorado(String tipo);
- public float obtenerOcupación(int nBandejas, int nBandejasDevueltas);
+ public float obtenerOcupacion(int nBandejas, int nBandejasDevueltas);
 
 
 }
