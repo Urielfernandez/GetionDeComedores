@@ -12,7 +12,7 @@ public class estadisticasImpl implements IEstadisticas{
 	@Override
 	public Estadisticas generarEstadisticas(ArrayList<Plato> valoraciones) {
 		//ocupacion no se puede calcular en esta funcion
-		
+		//
 		Estadisticas e= new Estadisticas();//necesitaría un constructor de estadisticas para inicializar los valores con los que
 										   //voy a hacer comparaciones
 		HashMap<Plato,Integer> primerosSolicitados=new HashMap<>();// key= plato value= num veces consumido
