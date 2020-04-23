@@ -3,7 +3,7 @@ import java.util.*;
 //clase que define el menu 
 public class Menu {
 private ArrayList <Plato> primerosDisponibles;
-private ArrayList <Plato> segundossDisponibles;
+private ArrayList <Plato> segundosDisponibles;
 private ArrayList <Plato> postresDisponibles;
 private ArrayList <Bebida> bebidas;
 private String diaSemana;
@@ -11,11 +11,11 @@ public Menu() {
 	super();
 	
 }
-public Menu(ArrayList<Plato> primerosDisponibles, ArrayList<Plato> segundossDisponibles,
+public Menu(ArrayList<Plato> primerosDisponibles, ArrayList<Plato> segundosDisponibles,
 		ArrayList<Plato> postresDisponibles, ArrayList<Bebida> bebidas, String diaSemana) {
 	super();
 	this.primerosDisponibles = primerosDisponibles;
-	this.segundossDisponibles = segundossDisponibles;
+	this.segundosDisponibles = segundosDisponibles;
 	this.postresDisponibles = postresDisponibles;
 	this.bebidas = bebidas;
 	this.diaSemana = diaSemana;
@@ -26,11 +26,11 @@ public ArrayList<Plato> getPrimerosDisponibles() {
 public void setPrimerosDisponibles(ArrayList<Plato> primerosDisponibles) {
 	this.primerosDisponibles = primerosDisponibles;
 }
-public ArrayList<Plato> getSegundossDisponibles() {
-	return segundossDisponibles;
+public ArrayList<Plato> getSegundosDisponibles() {
+	return segundosDisponibles;
 }
-public void setSegundossDisponibles(ArrayList<Plato> segundossDisponibles) {
-	this.segundossDisponibles = segundossDisponibles;
+public void setSegundosDisponibles(ArrayList<Plato> segundossDisponibles) {
+	this.segundosDisponibles = segundossDisponibles;
 }
 public ArrayList<Plato> getPostresDisponibles() {
 	return postresDisponibles;
