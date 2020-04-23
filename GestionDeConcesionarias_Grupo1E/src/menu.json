@@ -1,0 +1,8 @@
+{"menu":[{
+		"primerosDisponibles":[{"nombre":"Macarrones con tomate"}],
+		"segundosDisponibles":[{"nombre":"Pollo asado"}],
+		"postresDisponibles":[{"nombre":"flan de huevo"},{"nombre":"helado de fresa"}],
+		"bebidas":[{"nombre":"agua"},{"nombre":"Coca Cola"}],
+		"diaSemana":"Lunes"
+
+	}]}

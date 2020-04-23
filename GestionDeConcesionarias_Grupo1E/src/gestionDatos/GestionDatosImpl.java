@@ -14,11 +14,6 @@ public class GestionDatosImpl implements IGestionDatos{
 		return null;
 	}
 
-	@Override
-	public void almacenarCompra(Bandeja bandeja) {
-		// TODO Auto-generated method stub
-		
-	}
 
 	@Override
 	public void almacenarMenu(Menu menu) {
@@ -30,6 +25,13 @@ public class GestionDatosImpl implements IGestionDatos{
 	public void almacenarValoracion(Bandeja bandeja) {
 		// TODO Auto-generated method stub
 		
+	}
+
+
+	@Override
+	public ArrayList<Bandeja> recopilarDatosEstadisticas() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 }

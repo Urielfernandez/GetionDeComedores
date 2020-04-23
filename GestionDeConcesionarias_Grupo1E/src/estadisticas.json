@@ -1,0 +1,16 @@
+{"bandeja":[{
+		"primeroMasSolicitado":"Macarrones con tomate",
+		"segundoMasSolicitado":"Pollo asado",
+		"postreMasSolicitado":"flan de huevo",
+		"primeroMenosSolicitado":"Macarrones con tomate",
+		"segundoMenosSolicitado":"Pollo asado",
+		"postreMenosSolicitado":"helado de fresa",
+		"primeroMejorValorado":"Macarrones con tomate",
+		"segundoMejorValorado":"Pollo asado",
+		"postreMejorValorado":"flan de huevo",
+		"primeroPeorValorado":"Macarrones con tomate",
+		"segundoPeorValorado":"Pollo asado",
+		"postrePeorValorado":"helado de fresa",
+		"gradoOcupacion":36.1
+
+	}]}

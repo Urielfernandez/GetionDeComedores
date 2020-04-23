@@ -1,0 +1,24 @@
+{"plato":[{
+		"tipo":"primero",
+		"nombre":"Macarrones con tomate",
+		"notaMedia":3.5
+
+	},{
+		"tipo":"segundo",
+		"nombre":"Pollo asado",
+		"notaMedia":4
+
+	},{
+		"tipo":"postre",
+		"nombre":"flan de huevo",
+		"notaMedia":4.6
+
+	},{
+		"tipo":"postre",
+		"nombre":"helado de fresa",
+		"notaMedia":2.7
+
+	}
+
+
+]}
