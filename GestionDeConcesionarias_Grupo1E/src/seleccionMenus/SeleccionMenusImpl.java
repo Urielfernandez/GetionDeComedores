@@ -12,10 +12,10 @@ public class SeleccionMenusImpl implements ISeleccionMenus {
 
 
 	public Bandeja seleccionarMenu(Plato primero, Plato segundo, Plato postre, Bebida bebida) {
-		/*String idVale=sensores.generarCodigoVale();
+		String idVale=sensores.generarCodigoVale();
 		String idBandeja=sensores.generarCodigoBandejaDevuelta();
 		Bandeja bandeja= new Bandeja(idBandeja, idVale, primero, segundo, postre, bebida);
-		return bandeja;*/
+		return bandeja;
 		return null;
 	}
 }
