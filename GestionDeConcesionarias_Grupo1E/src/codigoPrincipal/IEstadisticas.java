@@ -3,7 +3,7 @@ import datos.*;
 import java.util.*;
 public interface IEstadisticas {
 	
- public Estadisticas generarEstadisticas(ArrayList<Integer> valoraciones);
+ public Estadisticas generarEstadisticas(ArrayList<Plato> valoraciones);
  public Plato seleccionarPlatoMasSolicitado(String tipo);
  public Plato seleccionarPlatoMenosSolicitado(String tipo);
  public Plato seleccionarPlatoMejorValorado(String tipo);
