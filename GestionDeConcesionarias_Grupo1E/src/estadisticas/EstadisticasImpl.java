@@ -7,7 +7,7 @@ import codigoPrincipal.IEstadisticas;
 import datos.Estadisticas;
 import datos.Plato;
 
-public class estadisticasImpl implements IEstadisticas{
+public class EstadisticasImpl implements IEstadisticas{
 
 	@Override
 	public Estadisticas generarEstadisticas(ArrayList<Plato> valoraciones) {
