@@ -8,4 +8,5 @@ public interface ISensores {
 	public boolean canjearVale(String valeACanjear) ;
 	public String generarCodigoBandeja();
 	public String generarCodigoBandejaDevuelta(Bandeja bandeja);
+	public int numeroDeBandejasNoDevueltas();
 }

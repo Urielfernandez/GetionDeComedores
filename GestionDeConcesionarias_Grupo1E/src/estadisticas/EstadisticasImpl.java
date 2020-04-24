@@ -37,7 +37,7 @@ public class EstadisticasImpl implements IEstadisticas{
 		int nBandejasNoDevueltas=0; 
 		
 		//AÑADIR METODO A ISensores
-		//nBandejasNoDevueltas=sensores.numeroDeBandejasNoDevueltas();
+		nBandejasNoDevueltas=sensores.numeroDeBandejasNoDevueltas();
 		
 		for(int i=0;i<valoraciones.size();i++) {//valoraciones
 			primero=valoraciones.get(i).getPrimeroSeleccionado();//primero, segundo y postre para iterar
