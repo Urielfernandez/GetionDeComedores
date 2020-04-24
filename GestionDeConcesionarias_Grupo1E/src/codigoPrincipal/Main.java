@@ -12,7 +12,11 @@ public class Main {
 			
 			//Prueba código de Sensores
 			ISensores sensor = new SensoresImpl();
+			System.out.println(sensor.generarCodigoVale());
+			String aux = sensor.generarCodigoVale();
+			System.out.println(aux);
 			
+			System.out.println(sensor.canjearVale(aux));
 	  }
 }
  	
