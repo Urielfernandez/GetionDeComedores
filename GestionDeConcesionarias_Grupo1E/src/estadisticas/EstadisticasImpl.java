@@ -28,7 +28,7 @@ public class EstadisticasImpl implements IEstadisticas{
 		
 		//PENDIENTE DE ARREGLAR
 		for(int i=0;i<valoraciones.size();i++) {//valoraciones
-			aux=valoraciones.get(i);
+			/*aux=valoraciones.get(i);
 			//primeros
 			if(aux.getTipo().compareTo("primero")==0) {
 				//valoraciones
@@ -74,7 +74,7 @@ public class EstadisticasImpl implements IEstadisticas{
 				}
 				else
 					postresSolicitados.put(aux,1);//sino lo metemos con 1 como su valor de veces que se ha consumido
-			}
+			}*/
 			
 		}//fin for
 		
