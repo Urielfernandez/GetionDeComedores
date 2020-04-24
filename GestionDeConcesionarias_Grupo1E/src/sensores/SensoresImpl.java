@@ -89,6 +89,7 @@ public class SensoresImpl implements ISensores{
 		return idAux;
 	}
 	
+	@Override
 	public int numeroDeBandejasNoDevueltas() {
 		return this.bandejasEntregadas.size();
 	}
