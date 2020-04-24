@@ -8,8 +8,11 @@ import datos.Bandeja;
 import datos.Estadisticas;
 import datos.Plato;
 
-public class EstadisticasImpl implements IEstadisticas{
 
+
+public class EstadisticasImpl implements IEstadisticas{
+	public static final int plazasDisponibles=200;
+	
 	@Override
 	public Estadisticas generarEstadisticas(ArrayList<Bandeja> valoraciones) {
 		//ocupacion no se puede calcular en esta funcion
