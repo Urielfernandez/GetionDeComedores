@@ -12,7 +12,7 @@ public class SensoresImpl implements ISensores{
 	private ArrayList<String> bandejasEntregadas;
 	private int generadorDeBandejas;
 	
-	public SensoresImpl() {
+	public SensoresImpl(){
 		this.valesGenerados = new ArrayList<>();
 		this.generadorDeVales = 0;
 		this.bandejasEntregadas = new ArrayList<>();
@@ -88,5 +88,8 @@ public class SensoresImpl implements ISensores{
 		
 		return idAux;
 	}
-
+	
+	public int numeroDeBandejasNoDevueltas() {
+		return this.bandejasEntregadas.size();
+	}
 }
