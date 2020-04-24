@@ -1,6 +1,7 @@
 package codigoPrincipal;
 import datos.*;
 import java.util.*;
+
 public interface ISensores {
  
 	public String generarCodigoVale();
