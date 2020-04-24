@@ -62,11 +62,11 @@ public class SensoresImpl implements ISensores{
 			this.generadorDeBandejas = 0;
 		}
 		
-		bandejaGenerada = "V"+Integer.toString(this.generadorDeBandejas);
+		bandejaGenerada = Integer.toString(this.generadorDeBandejas);
 		
 		while(this.bandejasEntregadas.contains(bandejaGenerada)) {
 			this.generadorDeBandejas++;
-			bandejaGenerada = "V"+Integer.toString(this.generadorDeBandejas);
+			bandejaGenerada = Integer.toString(this.generadorDeBandejas);
 		}
 		
 		this.generadorDeBandejas++;

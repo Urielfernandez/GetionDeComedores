@@ -16,6 +16,9 @@ public class Main {
 			String aux = sensor.generarCodigoVale();
 			System.out.println(aux);
 			
+			System.out.println("Bandeja generada con: " + sensor.generarCodigoBandeja());
+			System.out.println("Bandeja generada con: " + sensor.generarCodigoBandeja());
+			
 			System.out.println(sensor.canjearVale(aux));
 	  }
 }
