@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 import codigoPrincipal.IEstadisticas;
+
 import datos.Bandeja;
 import datos.Estadisticas;
 import datos.Plato;
@@ -135,7 +136,4 @@ public class EstadisticasImpl implements IEstadisticas{
 		//n=n*100;//en tanto por ciento
 		return n;
 	}
-
-
-
 }
