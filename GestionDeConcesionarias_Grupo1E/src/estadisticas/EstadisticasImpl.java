@@ -4,13 +4,18 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 import codigoPrincipal.IEstadisticas;
+
+import datos.Bandeja;
 import datos.Estadisticas;
 import datos.Plato;
 
-public class EstadisticasImpl implements IEstadisticas{
 
+
+public class EstadisticasImpl implements IEstadisticas{
+	public static final int plazasDisponibles=200;
+	
 	@Override
-	public Estadisticas generarEstadisticas(ArrayList<Plato> valoraciones) {
+	public Estadisticas generarEstadisticas(ArrayList<Bandeja> valoraciones) {
 		//ocupacion no se puede calcular en esta funcion
 		//
 		Estadisticas e= new Estadisticas();//necesitaría un constructor de estadisticas para inicializar los valores con los que
@@ -21,7 +26,7 @@ public class EstadisticasImpl implements IEstadisticas{
 		Plato aux;
 		int valor=0;
 		
-
+		//PENDIENTE DE ARREGLAR
 		for(int i=0;i<valoraciones.size();i++) {//valoraciones
 			aux=valoraciones.get(i);
 			//primeros
@@ -85,51 +90,50 @@ public class EstadisticasImpl implements IEstadisticas{
 				e.setPrimeroMenosSolicitado(p);
 		}
 		for(Plato p:segundosSolicitados.keySet()) {//SEGUNDOS
-			if(segundosSolicitados.get(p) > maxPrimeros)
+			if(segundosSolicitados.get(p) > maxSegundos)
 				e.setSegundoMasSolicitado(p);
-			else if(segundosSolicitados.get(p) < minPrimeros)//suponiendo que el mas y menos solicitado no son el mismo
+			else if(segundosSolicitados.get(p) < minSegundos)//suponiendo que el mas y menos solicitado no son el mismo
 				e.setSegundoMenosSolicitado(p);
 		}
 		for(Plato p:postresSolicitados.keySet()) {//POSTRES
-			if(postresSolicitados.get(p) > maxPrimeros)
+			if(postresSolicitados.get(p) > maxPostres)
 				e.setPostreMasSolicitado(p);
-			else if(postresSolicitados.get(p) < minPrimeros)//suponiendo que el mas y menos solicitado no son el mismo
+			else if(postresSolicitados.get(p) < minPostres)//suponiendo que el mas y menos solicitado no son el mismo
 				e.setPostreMenosSolicitado(p);
 		}
 		
 		return e;
 	}
 
-	@Override
-	public Plato seleccionarPlatoMasSolicitado(String tipo) {
+
+	private Plato seleccionarPlatoMasSolicitado(String tipo) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
-	@Override
-	public Plato seleccionarPlatoMenosSolicitado(String tipo) {
+	
+	private Plato seleccionarPlatoMenosSolicitado(String tipo) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
-	@Override
-	public Plato seleccionarPlatoMejorValorado(String tipo) {
+	
+	private Plato seleccionarPlatoMejorValorado(String tipo) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
-	@Override
-	public Plato seleccionarPlatoPeorValorado(String tipo) {
+	
+	private Plato seleccionarPlatoPeorValorado(String tipo) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
-	@Override
-	public float obtenerOcupacion(int nBandejas, int nBandejasDevueltas) {
+	
+	private float obtenerOcupacion(int nBandejas, int nBandejasDevueltas) {
 		float n=0;
 		n=(nBandejas-nBandejasDevueltas)/nBandejas;//en tanto por uno
 		//n=n*100;//en tanto por ciento
 		return n;
 	}
-
 }
