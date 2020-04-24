@@ -1,4 +1,4 @@
-package Sensores;
+package sensores;
 
 import java.util.ArrayList;
 import java.util.Calendar;
