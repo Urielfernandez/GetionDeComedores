@@ -22,10 +22,9 @@ public class GestionDatosImpl implements IGestionDatos{
 		ArrayList<Menu> menus = new ArrayList<Menu>();
 		JSONObject objMenus = null,objPlatos = null;
 		try {
-			//Esto puede dar problemas si hay tildes o enhes en los nombres de los platos
-			String content = Files.readString(Paths.get("./src/menu.json"), StandardCharsets.US_ASCII);
+			String content = new String(Files.readAllBytes(Paths.get("./src/menu.json")));
 			objMenus = new JSONObject(content);
-			String content2 = Files.readString(Paths.get("./src/plato.json"), StandardCharsets.US_ASCII);
+			String content2 = new String(Files.readAllBytes(Paths.get("./src/plato.json")));
 			objPlatos = new JSONObject(content2);
 		}catch(Exception e) {
 			e.printStackTrace();
@@ -107,11 +106,11 @@ public class GestionDatosImpl implements IGestionDatos{
 		JSONObject objMenus = null,objPlatos = null,objBebidas = null;
 		try {
 			//Esto puede dar problemas si hay tildes o enhes en los nombres de los platos
-			String content = Files.readString(Paths.get("./src/menu.json"), StandardCharsets.US_ASCII);
+			String content = new String(Files.readAllBytes(Paths.get("./src/menu.json")));
 			objMenus = new JSONObject(content);
-			String content2 = Files.readString(Paths.get("./src/plato.json"), StandardCharsets.US_ASCII);
+			String content2 = new String(Files.readAllBytes(Paths.get("./src/plato.json")));
 			objPlatos = new JSONObject(content2);
-			String content3 = Files.readString(Paths.get("./src/bebida.json"), StandardCharsets.US_ASCII);
+			String content3 = new String(Files.readAllBytes(Paths.get("./src/bebida.json")));
 			objBebidas = new JSONObject(content3);
 		}catch(Exception e) {
 			e.printStackTrace();
@@ -122,7 +121,7 @@ public class GestionDatosImpl implements IGestionDatos{
 		JSONArray bebidas = new JSONArray();
 		JSONObject jmenu = new JSONObject();
 
-		JSONArray bebidasG = new JSONArray();
+
 		for(int x=0;x<menu.getPrimerosDisponibles().size();x++) {
 			JSONObject pMenu = new JSONObject();
 			pMenu.put("nombre", menu.getPrimerosDisponibles().get(x).getNombre());
@@ -198,9 +197,9 @@ public class GestionDatosImpl implements IGestionDatos{
 		JSONObject objBandeja = null,objBase = null;
 		try {
 			//Esto puede dar problemas si hay tildes o enhes en los nombres de los platos
-			String content = Files.readString(Paths.get("./src/bandeja.json"), StandardCharsets.US_ASCII);
+			String content = new String(Files.readAllBytes(Paths.get("./src/bandeja.json")));
 			objBandeja = new JSONObject(content);
-			String content2 = Files.readString(Paths.get("./src/baseEstadistica.json"), StandardCharsets.US_ASCII);
+			String content2 = new String(Files.readAllBytes(Paths.get("./src/baseEstadistica.json")));
 			objBase = new JSONObject(content2);
 		}catch(Exception e) {
 			e.printStackTrace();
@@ -263,9 +262,9 @@ public class GestionDatosImpl implements IGestionDatos{
 		JSONObject objBandeja = null,objBase = null;
 		try {
 			//Esto puede dar problemas si hay tildes o enhes en los nombres de los platos
-			String content = Files.readString(Paths.get("./src/bandeja.json"), StandardCharsets.US_ASCII);
+			String content = new String(Files.readAllBytes(Paths.get("./src/bandeja.json")));
 			objBandeja = new JSONObject(content);
-			String content2 = Files.readString(Paths.get("./src/baseEstadistica.json"), StandardCharsets.US_ASCII);
+			String content2 = new String(Files.readAllBytes(Paths.get("./src/baseEstadistica.json")));
 			objBase = new JSONObject(content2);
 		}catch(Exception e) {
 			e.printStackTrace();
