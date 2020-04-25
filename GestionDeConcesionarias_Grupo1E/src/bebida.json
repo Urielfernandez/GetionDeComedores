@@ -1,7 +1,1 @@
-{"bebida":[{
-		"nombre":"agua"
-
-	},{
-		"nombre":"Coca Cola"
-
-	}]}
+{"bebida":[{"nombre":"agua"},{"nombre":"Coca Cola"},{"nombre":"gasolina"}]}
