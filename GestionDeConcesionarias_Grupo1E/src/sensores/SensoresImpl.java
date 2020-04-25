@@ -13,9 +13,9 @@ public class SensoresImpl implements ISensores{
 	private int generadorDeBandejas;
 	
 	public SensoresImpl(){
-		this.valesGenerados = new ArrayList<>();
+		this.valesGenerados = new ArrayList<String>();
 		this.generadorDeVales = 0;
-		this.bandejasEntregadas = new ArrayList<>();
+		this.bandejasEntregadas = new ArrayList<String>();
 		this.generadorDeBandejas = 0;
 	}
 	

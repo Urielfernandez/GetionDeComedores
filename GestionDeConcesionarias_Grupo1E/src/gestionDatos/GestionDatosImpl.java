@@ -352,7 +352,7 @@ public class GestionDatosImpl implements IGestionDatos{
 				}
 			}
 			bebida = new Bebida(bandejaArr.getJSONObject(x).getString("bebidasSeleccion"));
-			id = bandejaArr.getJSONObject(x).getString("ID");
+			id =String.valueOf( bandejaArr.getJSONObject(x).getInt("ID"));
 			idvale= bandejaArr.getJSONObject(x).getString("idVale");
 			
 			for(int z=0;z<baseArr.length();z++) {
@@ -365,13 +365,13 @@ public class GestionDatosImpl implements IGestionDatos{
 					dia = baseArr.getJSONObject(z).getString("dia");
 					
 					for(int w=0;w<baseArr.getJSONObject(z).getJSONArray("valoracionesPlatos").length();w++) {
-						if(primero.getNombre().equals(baseArr.getJSONObject(z).getJSONArray("valoracionesPlatos").getJSONObject(w).getString("nombre"))) {
+						if(primero.getNombre().equals(baseArr.getJSONObject(z).getJSONArray("valoracionesPlatos").getJSONObject(w).getString("plato"))) {
 							valoraciones.put(primero,baseArr.getJSONObject(z).getJSONArray("valoracionesPlatos").getJSONObject(w).getInt("nota"));
 						}
-						if(segundo.getNombre().equals(baseArr.getJSONObject(z).getJSONArray("valoracionesPlatos").getJSONObject(w).getString("nombre"))) {
+						if(segundo.getNombre().equals(baseArr.getJSONObject(z).getJSONArray("valoracionesPlatos").getJSONObject(w).getString("plato"))) {
 							valoraciones.put(segundo,baseArr.getJSONObject(z).getJSONArray("valoracionesPlatos").getJSONObject(w).getInt("nota"));
 						}
-						if(postre.getNombre().equals(baseArr.getJSONObject(z).getJSONArray("valoracionesPlatos").getJSONObject(w).getString("nombre"))) {
+						if(postre.getNombre().equals(baseArr.getJSONObject(z).getJSONArray("valoracionesPlatos").getJSONObject(w).getString("plato"))) {
 							valoraciones.put(postre,baseArr.getJSONObject(z).getJSONArray("valoracionesPlatos").getJSONObject(w).getInt("nota"));
 						}
 					}

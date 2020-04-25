@@ -10,6 +10,16 @@ private Plato segundoSeleccionado;
 private Plato postreSeleccionado;
 private Bebida bebidaSeleccionada;
 private BaseEstadisticas estadisticas;
+
+
+public Bandeja(Plato primeroSeleccionado, Plato segundoSeleccionado, Plato postreSeleccionado,
+		Bebida bebidaSeleccionada) {
+	super();
+	this.primeroSeleccionado = primeroSeleccionado;
+	this.segundoSeleccionado = segundoSeleccionado;
+	this.postreSeleccionado = postreSeleccionado;
+	this.bebidaSeleccionada = bebidaSeleccionada;
+}
 public Bandeja(String id, String idVale, Plato primeroSeleccionado, Plato segundoSeleccionado, Plato postreSeleccionado,
 		Bebida bebidaSeleccionada) {
 	this.id = id;

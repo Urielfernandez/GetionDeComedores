@@ -97,6 +97,7 @@ public class PagosCualificacionesImpl implements IPagosCualificaciones{
 	@Override
 	public String devolverBandeja(Bandeja bandeja) {
 		if(this.historialDeBandejas.containsKey(bandeja.getId())) {
+			this.conexionManipuladorDeDatos.almacenarValoracion(bandeja);
 			return this.conexionSensor.generarCodigoBandejaDevuelta(bandeja);
 		}
 		

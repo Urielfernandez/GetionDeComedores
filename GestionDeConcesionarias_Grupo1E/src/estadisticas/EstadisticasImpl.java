@@ -15,6 +15,9 @@ public class EstadisticasImpl implements IEstadisticas{
 	public static final int plazasDisponibles=200;
 	ISensores sensores;
 	
+	public EstadisticasImpl(ISensores sensores) {
+		this.sensores = sensores;
+	}
 	@Override
 	public Estadisticas generarEstadisticas(ArrayList<Bandeja> valoraciones) {
 		
@@ -43,8 +46,8 @@ public class EstadisticasImpl implements IEstadisticas{
 		//Comparar Valoraciones de cada tipo de plato y contar las veces que se consume con un HashMap
 		for(int i=0;i<valoraciones.size();i++) {
 			primero=valoraciones.get(i).getPrimeroSeleccionado();//primero, segundo y postre para iterar
-			segundo=valoraciones.get(i).getPrimeroSeleccionado();
-			postre=valoraciones.get(i).getPrimeroSeleccionado();
+			segundo=valoraciones.get(i).getSegundoSeleccionado();
+			postre=valoraciones.get(i).getPostreSeleccionado();
 			//primeros
 				//valoraciones -> usando las funciones de comparar valoraciones
 				primeroMejorValorado=compararPlatoMejorValorado(primero,primeroMejorValorado);
@@ -146,7 +149,7 @@ public class EstadisticasImpl implements IEstadisticas{
 
 	private float obtenerOcupacion(int nBandejas, int nBandejasNoDevueltas) {
 		float n=0;
-		n=nBandejasNoDevueltas/nBandejas;//en tanto por uno
+		n = ((float) nBandejasNoDevueltas/ (float) nBandejas) * 100;
 		return n;
 	}
 }

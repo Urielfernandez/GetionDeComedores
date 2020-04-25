@@ -1,8 +1,10 @@
 {"menu":[{
-		"primerosDisponibles":[{"nombre":"Macarrones con tomate"}],
-		"segundosDisponibles":[{"nombre":"Pollo asado"}],
-		"postresDisponibles":[{"nombre":"flan de huevo"},{"nombre":"helado de fresa"}],
-		"bebidas":[{"nombre":"agua"},{"nombre":"Coca Cola"}],
-		"diaSemana":"Lunes"
+        "primerosDisponibles":[{"nombre":"Macarrones con tomate"},{"nombre":"Macarrones con queso"},{"nombre":"Macarrones con pollo"}],
+        "segundosDisponibles":[{"nombre":"Pollo asado"},{"nombre":"Macarrones con keke"},{"nombre":"Macarrones con knak"}],
+        "postresDisponibles":[{"nombre":"flan de huevo"},{"nombre":"helado de fresa"},{"nombre":"Flan de cafe"}],
+        "bebidas":[{"nombre":"agua"},{"nombre":"Coca Cola"}],
+        "diaSemana":"Sabado"
 
-	}]}
+ 
+
+    }]}

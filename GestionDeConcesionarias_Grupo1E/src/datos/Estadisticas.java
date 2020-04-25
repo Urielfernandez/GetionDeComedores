@@ -1,7 +1,6 @@
 package datos;
 
 public class Estadisticas {
-public static final int plazasDisponibles=200;
 private Plato primeroMasSolicitado;
 private Plato segundoMasSolicitado;
 private Plato postreMasSolicitado;
@@ -18,17 +17,7 @@ private float gradoOcupacion;
 
 
 public Estadisticas() {
-	//aqui se deberia llamar a la funcion calcular estadisticas
-	//tambien a la funcion calcular ocupacion
-}
 
-//aqui habria que mterse con los ficheros de estadisticas a calcularlos
-public void calcularEstadisticas() {
-	
-}
-public void calcularOcupacion() {
-	//a partir del numero de bandejas devueltas, que no esta guardado en ningun lado
-	//habria que sacar esta estadistica
 }
 
 public Plato getPrimeroMasSolicitado() {

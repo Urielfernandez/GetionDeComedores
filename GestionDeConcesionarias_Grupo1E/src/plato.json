@@ -1,24 +1,72 @@
 {"plato":[{
-		"tipo":"primero",
-		"nombre":"Macarrones con tomate",
-		"notaMedia":3.5
+        "tipo":"primero",
+        "nombre":"Macarrones con tomate",
+        "notaMedia":3.5
 
-	},{
-		"tipo":"segundo",
-		"nombre":"Pollo asado",
-		"notaMedia":4
+ 
 
-	},{
-		"tipo":"postre",
-		"nombre":"flan de huevo",
-		"notaMedia":4.6
+    },
+{
+        "tipo":"primero",
+        "nombre":"Macarrones con queso",
+        "notaMedia":3.5
 
-	},{
-		"tipo":"postre",
-		"nombre":"helado de fresa",
-		"notaMedia":2.7
+ 
 
-	}
+    },{
+        "tipo":"primero",
+        "nombre":"Macarrones con pollo",
+        "notaMedia":3.5
+
+ 
+
+    },
+{
+        "tipo":"segundo",
+        "nombre":"Macarrones con keke",
+        "notaMedia":3.5
+
+ 
+
+    },
+{
+        "tipo":"segundo",
+        "nombre":"Macarrones con knak",
+        "notaMedia":3.5
+
+ 
+
+    },{
+        "tipo":"segundo",
+        "nombre":"Pollo asado",
+        "notaMedia":4
+
+ 
+
+    },{
+        "tipo":"postre",
+        "nombre":"flan de huevo",
+        "notaMedia":4.6
+
+ 
+
+    },{
+        "tipo":"postre",
+        "nombre":"helado de fresa",
+        "notaMedia":2.7
+
+ 
+
+    },{
+        "tipo":"postre",
+        "nombre":"Flan de cafe",
+        "notaMedia":3.5
+
+ 
+
+    }
+
+ 
 
 
 ]}
