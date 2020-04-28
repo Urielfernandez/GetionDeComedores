@@ -1,7 +1,7 @@
 package codigoPrincipal;
 
-import java.util.*;
-
+import java.util.HashMap;
+import java.util.Scanner;
 
 import datos.Bandeja;
 import datos.Bebida;
@@ -109,71 +109,6 @@ public class Main {
 						System.out.println("Porque hay " + gestionSensores.numeroDeBandejasNoDevueltas() + " bandejas ocupadas.");
 						break;
 					case "k":
-						ArrayList<Plato> primeros= new ArrayList<>();
-						ArrayList<Plato> segundos= new ArrayList<>();
-						ArrayList<Plato> postres= new ArrayList<>();
-						ArrayList<Bebida> bebidas= new ArrayList<>();
-						ArrayList<String> diasSemana=new ArrayList<>();
-						diasSemana.add("Lunes");
-						diasSemana.add("Martes");
-						diasSemana.add("Miercoles");
-						diasSemana.add("Jueves");
-						diasSemana.add("Viernes");
-						System.out.println("Introduce el dia de la semana para el menu (de Lunes a Viernes)");
-						String dia= escaner.nextLine();
-						dia = dia.substring(0,1).toUpperCase() + dia.substring(1).toLowerCase();
-						if(!diasSemana.contains(dia)) {
-							System.out.println("El dia de la semana introducido no es correcto");
-							return;
-						}
-						System.out.println("Introduce los primeros platos");
-						System.out.println("Plato 1:");
-						Plato platoP1=new Plato("primero", escaner.nextLine());
-						platoP1.setNotaMedia((float)2.5);
-						primeros.add(platoP1);
-						System.out.println("Plato 2:");
-						Plato platoP2=new Plato("primero", escaner.nextLine());
-						platoP2.setNotaMedia((float)2.5);
-						primeros.add(platoP2);
-						System.out.println("Plato 3:");
-						Plato platoP3=new Plato("primero", escaner.nextLine());
-						platoP3.setNotaMedia((float)2.5);
-						primeros.add(platoP3);
-						System.out.println("Introduce los segundos platos");
-						System.out.println("Plato 1:");
-						Plato platoS1=new Plato("segundo", escaner.nextLine());
-						platoS1.setNotaMedia((float)2.5);
-						segundos.add(platoS1);
-						System.out.println("Plato 2:");
-						Plato platoS2=new Plato("segundo", escaner.nextLine());
-						platoS2.setNotaMedia((float)2.5);
-						segundos.add(platoS2);
-						System.out.println("Plato 3:");
-						Plato platoS3=new Plato("segundo", escaner.nextLine());
-						platoS3.setNotaMedia((float)2.5);
-						segundos.add(platoS3);
-						System.out.println("Introduce los postres");
-						System.out.println("Postre 1:");
-						Plato postre1=new Plato("postre", escaner.nextLine());
-						postre1.setNotaMedia((float)2.5);
-						postres.add(postre1);
-						System.out.println("Postre 2:");
-						Plato postre2=new Plato("postre", escaner.nextLine());
-						postre2.setNotaMedia((float)2.5);
-						postres.add(postre2);
-						System.out.println("Postre 3:");
-						Plato postre3=new Plato("postre", escaner.nextLine());
-						postre3.setNotaMedia((float)2.5);
-						postres.add(postre3);
-						System.out.println("Introduce el numero de bebidas");
-						int bebidasN = escaner.nextInt();
-						escaner.nextLine();
-						for(int i=0;i<bebidasN;i++) {
-							System.out.println("Bebida "+(i+1)+": ");
-							Bebida b=new Bebida(escaner.nextLine());
-							bebidas.add(b);
-						}
-						gestionDeMenus.construirMenu(dia, primeros, segundos, postres, bebidas);
 						
 						break;
 					case "j":
